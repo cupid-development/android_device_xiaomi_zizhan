@@ -12,7 +12,8 @@ $(call inherit-product, vendor/xiaomi/zizhan/zizhan-vendor.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    SettingsProviderResZizhan
+    SettingsProviderResZizhan \
+    WifiResZizhan
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
