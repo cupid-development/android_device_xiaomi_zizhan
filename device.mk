@@ -12,6 +12,7 @@ $(call inherit-product, vendor/xiaomi/zizhan/zizhan-vendor.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
+    FrameworksResZizhan \
     SettingsProviderResZizhan \
     WifiResZizhan
 
