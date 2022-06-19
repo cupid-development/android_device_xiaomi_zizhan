@@ -14,6 +14,7 @@ $(call inherit-product, vendor/xiaomi/zizhan/zizhan-vendor.mk)
 PRODUCT_PACKAGES += \
     FrameworksResZizhan \
     SettingsProviderResZizhan \
+    SystemUIResZizhan \
     WifiResZizhan
 
 # Soong namespaces
