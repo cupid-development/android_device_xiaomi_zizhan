@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureResZizhan \
     FrameworksResZizhan \
+    NfcResZizhan \
     SettingsProviderResZizhan \
     SettingsResZizhan \
     SystemUIResZizhan \
