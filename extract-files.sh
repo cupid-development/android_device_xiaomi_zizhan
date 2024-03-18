@@ -8,6 +8,15 @@
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/camera/pureView_parameter.xml)
+            sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
+            ;;
+        vendor/etc/camera/zizhan_enhance_motiontuning.xml|vendor/etc/camera/zizhan_motiontuning.xml)
+            sed -i 's/xml=version/xml version/g' "${2}"
+            ;;
+        vendor/lib64/libcamximageformatutils.so)
+            "${PATCHELF_0_17_2}" --replace-needed "vendor.qti.hardware.display.config-V2-ndk_platform.so" "vendor.qti.hardware.display.config-V2-ndk.so" "${2}"
+            ;;
     esac
 }
 
