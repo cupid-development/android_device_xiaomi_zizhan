@@ -15,5 +15,8 @@ DEVICE_PATH := device/xiaomi/zizhan
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 
+# Recovery
+TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
+
 # Screen density
 TARGET_SCREEN_DENSITY := 440
