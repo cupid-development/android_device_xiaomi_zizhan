@@ -32,6 +32,9 @@ BOOT_KERNEL_MODULES += $(device_second_stage_modules)
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 
+# Recovery
+TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
+
 # Screen density
 TARGET_SCREEN_DENSITY := 440
 
