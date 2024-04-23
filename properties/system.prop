@@ -1,2 +1,5 @@
+# Display
+ro.surface_flinger.primary_display_orientation=ORIENTATION_270
+
 # Xiaomi
 ro.product.mod_device=zizhan
