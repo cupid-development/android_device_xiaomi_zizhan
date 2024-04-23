@@ -413,4 +413,135 @@
         <item>500</item>
         <item>500</item>
     </integer-array>
+
+    <!-- If true, allows rotation resolver service to help resolve screen rotation. -->
+    <bool name="config_allowRotationResolver">false</bool>
+
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as open by the
+         device fold controller. Default is empty. -->
+    <integer-array name="config_openDeviceStates">
+        <item>2</item> <!-- HALF_OPENED -->
+        <item>3</item> <!-- OPENED -->
+        <item>5</item> <!-- OPENED_PRESENTATION -->
+        <item>6</item> <!-- OPENED_REVERSE_PRESENTATION -->
+    </integer-array>
+
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as folded by the
+         display fold controller. Default is empty. -->
+    <integer-array name="config_foldedDeviceStates">
+        <item>0</item> <!-- FOLDED -->
+    </integer-array>
+
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as half-folded by
+     the display fold controller. Default is empty. -->
+    <integer-array name="config_halfFoldedDeviceStates">
+        <item>1</item> <!-- TENT -->
+        <item>4</item> <!-- OPENED_REVERSE -->
+        <item>6</item> <!-- OPENED_REVERSE_PRESENTATION -->
+    </integer-array>
+
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as a rear display
+     state. Default is empty. -->
+    <integer-array name="config_rearDisplayDeviceStates">
+        <item>3</item> <!-- OPENED -->
+    </integer-array>
+
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as concurrent
+    display state. Default is empty. -->
+    <integer-array name="config_concurrentDisplayDeviceStates">
+        <item>5</item> <!-- OPENED_PRESENTATION -->
+        <item>6</item> <!-- OPENED_REVERSE_PRESENTATION -->
+    </integer-array>
+
+    <!-- Indicates whether the window manager reacts to half-fold device states by overriding
+     rotation. -->
+    <bool name="config_windowManagerHalfFoldAutoRotateOverride">true</bool>
+
+    <!-- Indicates whether the window manager pauses autorotation when folding or unfolding
+     a foldable device based on hinge angle sensor events and physical display switch events. -->
+    <bool name="config_windowManagerPauseRotationWhenUnfolding">true</bool>
+
+    <!-- Amount of time during which autorotation will be disabled since last hinge angle event -->
+    <integer name="config_pauseRotationWhenUnfolding_maxHingeAngle">165</integer>
+
+    <!-- Maximum hinge angle event to be considered to disable autorotation when folding or
+     unfolding -->
+    <integer name="config_pauseRotationWhenUnfolding_hingeEventTimeout">400</integer>
+
+    <!-- Amount of time during which autorotation will be disabled since last display switch -->
+    <integer name="config_pauseRotationWhenUnfolding_displaySwitchTimeout">1000</integer>
+
+    <!-- When a device enters any of these states, it should be woken up. States are defined in
+         device_state_configuration.xml. -->
+    <integer-array name="config_deviceStatesOnWhichToWakeUp">
+        <item>2</item> <!-- HALF_OPENED -->
+        <item>3</item> <!-- OPENED -->
+    </integer-array>
+
+    <!-- Map of device posture to rotation lock setting. Each entry must be in the format
+         "key:value", or "key:value:fallback_key" for example: "0:1" or "2:0:1". The keys are one of
+         Settings.Secure.DeviceStateRotationLockKey, and the values are one of
+         Settings.Secure.DeviceStateRotationLockSetting.
+         The fallback is a key to a device posture that can be specified when the value is
+         Settings.Secure.DEVICE_STATE_ROTATION_LOCK_IGNORED.
+     -->
+    <string-array name="config_perDeviceStateRotationLockDefaults">
+        <item>0:1</item>
+        <item>1:0:2</item>
+        <item>2:2</item>
+    </string-array>
+
+    <!-- Map of System DeviceState supplied by DeviceStateManager to WM Jetpack posture. Must be in
+         the format [System DeviceState]:[WM Jetpack Posture], for example: "0:1". -->
+    <string-array name="config_device_state_postures" translatable="false">
+        <item>0:1</item> <!-- CLOSED : STATE_FLAT -->
+        <item>1:1</item> <!-- TENT : STATE_FLAT -->
+        <item>2:2</item> <!-- HALF_OPENED : STATE_HALF_OPENED -->
+        <item>3:3</item> <!-- OPENED : STATE_FLIPPED -->
+        <item>4:1</item> <!-- OPENED_REVERSE : STATE_FLAT -->
+        <item>5:3</item> <!-- OPENED_PRESENTATION : STATE_FLIPPED -->
+        <item>6:1</item> <!-- OPENED_REVERSE_PRESENTATION : STATE_FLAT -->
+    </string-array>
+
+    <!-- An array contains unique ids of all built-in displays and the unique id of a display can be
+         obtained from {@link Display#getUniqueId}. This array should be set for multi-display
+         devices if there are different display related configs(e.g. display cutout, rounded corner)
+         between each built-in display.
+         It is used as an index for multi-display related configs:
+         First look up the index of the unique id of the given built-in display unique id in this
+         array and use this index to get the info in corresponding config arrays such as:
+           - config_displayCutoutPathArray
+           - config_displayCutoutApproximationRectArray
+           - config_fillBuiltInDisplayCutoutArray
+           - config_maskBuiltInDisplayCutoutArray
+           - config_waterfallCutoutArray
+           - config_roundedCornerRadiusArray
+           - config_roundedCornerTopRadiusArray
+           - config_roundedCornerBottomRadiusArray
+           - config_builtInDisplayIsRoundArray (config in SystemUI resource)
+           - config_roundedCornerMultipleRadiusArray (config in SystemUI resource)
+           - config_roundedCornerDrawableArray (config in SystemUI resource)
+           - config_roundedCornerTopDrawableArray (config in SystemUI resource)
+           - config_roundedCornerBottomDrawableArray (config in SystemUI resource)
+
+         Leave this array empty for single display device and the system will load the default main
+         built-in related configs.
+         -->
+    <string-array name="config_displayUniqueIdArray">
+        <item>"local:4630946220589295746"</item>
+        <item>"local:4630946220589295747"</item>
+    </string-array>
+
+    <!-- Indicates whether to enable an animation when unfolding a device or not -->
+    <bool name="config_unfoldTransitionEnabled">true</bool>
+
+    <!-- Indicates whether to enable hinge angle sensor when using unfold animation -->
+    <bool name="config_unfoldTransitionHingeAngle">true</bool>
+
+    <!-- Whether we should persist the brightness value in nits for the default display even if
+         the underlying display device changes. -->
+    <bool name="config_persistBrightnessNitsForDefaultDisplay">true</bool>
+
+    <!-- Whether to show Fold lock behavior setting feature in Settings App -->
+    <bool name="config_fold_lock_behavior">true</bool>
 </resources>
