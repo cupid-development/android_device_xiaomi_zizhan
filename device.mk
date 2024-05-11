@@ -10,6 +10,11 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/zizhan/zizhan-vendor.mk)
 
+# Display configurations
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/display_id_4630946220589295746.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946220589295746.xml \
+    $(LOCAL_PATH)/configs/display/display_id_4630946220589295747.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946220589295747.xml
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResZizhan \
