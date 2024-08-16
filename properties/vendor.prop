@@ -1,2 +1,6 @@
 # Camera
 vendor.camera.aux.packagelist=org.lineageos.aperture,org.lineageos.aperture.dev
+
+# Sensors
+ro.vendor.sensors.notifier.light_sensors.primary=5
+ro.vendor.sensors.notifier.light_sensors.secondary=33171081
