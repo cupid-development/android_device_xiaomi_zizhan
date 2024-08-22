@@ -17,8 +17,8 @@ device_second_stage_modules := \
     goodix_tee.ko \
     qcom_pm8008-regulator.ko \
     qcom-hv-haptics.ko \
-    fts_touch_spi_pri.ko \
-    fts_touch_spi_sec.ko \
+    fst2.ko \
+    fts_touch_spi.ko \
     wl2866d.ko
 
 device_vendor_dlkm_exclusive_modules := \
