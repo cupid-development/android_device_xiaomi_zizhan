@@ -1047,7 +1047,6 @@ vendor/etc/mdss_dsi_l18_38_0c_0a_sec_dsc_cmd_mi.xml
 vendor/etc/input-port-associations.xml
 
 # Fingerprint
-odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
