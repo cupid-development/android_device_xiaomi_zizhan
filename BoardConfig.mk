@@ -14,18 +14,10 @@ DEVICE_PATH := device/xiaomi/zizhan
 
 # Kernel
 device_second_stage_modules := \
-    goodix_tee.ko \
-    qcom_pm8008-regulator.ko \
-    qcom-hv-haptics.ko \
-    fst2.ko \
-    fts_touch_spi.ko \
-    wl2866d.ko
-
-device_vendor_dlkm_exclusive_modules := \
-    cs35l41_dlkm.ko
+    fst2.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
-BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules) $(device_vendor_dlkm_exclusive_modules)
+BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
 
 BOOT_KERNEL_MODULES += $(device_second_stage_modules)
 
