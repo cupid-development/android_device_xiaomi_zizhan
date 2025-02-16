@@ -429,8 +429,8 @@
          built-in related configs.
          -->
     <string-array name="config_displayUniqueIdArray">
+        <item>"local:4630946220589295745"</item>
         <item>"local:4630946220589295746"</item>
-        <item>"local:4630946220589295747"</item>
     </string-array>
 
     <!-- Indicates whether to enable an animation when unfolding a device or not -->

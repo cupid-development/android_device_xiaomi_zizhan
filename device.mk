@@ -18,8 +18,8 @@ PRODUCT_COPY_FILES += \
 
 # Display configurations
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/display/display_config_inner.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946220589295746.xml \
-    $(LOCAL_PATH)/display/display_config_outer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946220589295747.xml \
+    $(LOCAL_PATH)/display/display_config_inner.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946220589295745.xml \
+    $(LOCAL_PATH)/display/display_config_outer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946220589295746.xml \
     $(LOCAL_PATH)/display/display_layout_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_layout_configuration.xml \
     $(LOCAL_PATH)/display/input-port-associations.xml:$(TARGET_COPY_OUT_VENDOR)/etc/input-port-associations.xml
 

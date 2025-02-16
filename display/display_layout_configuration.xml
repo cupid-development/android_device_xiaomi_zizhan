@@ -2,66 +2,66 @@
   <layout>
     <state>0</state> <!-- FOLDED -->
     <display enabled="true" defaultDisplay="true">
-      <address>4630946220589295747</address>
+      <address>4630946220589295746</address>
     </display>
     <display enabled="false">
-      <address>4630946220589295746</address>
+      <address>4630946220589295745</address>
     </display>
   </layout>
   <layout>
     <state>1</state> <!-- TENT -->
     <display enabled="true" defaultDisplay="true">
-      <address>4630946220589295747</address>
+      <address>4630946220589295746</address>
     </display>
     <display enabled="false">
-      <address>4630946220589295746</address>
+      <address>4630946220589295745</address>
     </display>
   </layout>
   <layout>
     <state>2</state> <!-- HALF_OPENED -->
     <display enabled="true" defaultDisplay="true">
-      <address>4630946220589295746</address>
+      <address>4630946220589295745</address>
     </display>
     <display enabled="false">
-      <address>4630946220589295747</address>
+      <address>4630946220589295746</address>
     </display>
   </layout>
   <layout>
     <state>3</state> <!-- OPENED -->
     <display enabled="true" defaultDisplay="true">
-      <address>4630946220589295746</address>
+      <address>4630946220589295745</address>
     </display>
     <display enabled="false">
-      <address>4630946220589295747</address>
+      <address>4630946220589295746</address>
     </display>
   </layout>
   <layout>
     <state>4</state> <!-- OPENED_REVERSE -->
     <display enabled="true" defaultDisplay="true">
-      <address>4630946220589295747</address>
+      <address>4630946220589295746</address>
     </display>
     <display enabled="false">
-      <address>4630946220589295746</address>
+      <address>4630946220589295745</address>
     </display>
   </layout>
   <layout>
     <state>5</state> <!-- OPENED_PRESENTATION -->
     <display enabled="true" defaultDisplay="true">
-      <address>4630946220589295746</address>
+      <address>4630946220589295745</address>
     </display>
     <display enabled="true">
-      <address>4630946220589295747</address>
-      <leadDisplayAddress>4630946220589295746</leadDisplayAddress>
+      <address>4630946220589295746</address>
+      <leadDisplayAddress>4630946220589295745</leadDisplayAddress>
     </display>
   </layout>
   <layout>
     <state>6</state> <!-- OPENED_REVERSE_PRESENTATION -->
     <display enabled="true" defaultDisplay="true">
-      <address>4630946220589295747</address>
+      <address>4630946220589295746</address>
     </display>
     <display enabled="true">
-      <address>4630946220589295746</address>
-      <leadDisplayAddress>4630946220589295747</leadDisplayAddress>
+      <address>4630946220589295745</address>
+      <leadDisplayAddress>4630946220589295746</leadDisplayAddress>
     </display>
   </layout>
 </layouts>
