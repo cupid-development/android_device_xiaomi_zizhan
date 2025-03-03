@@ -36,7 +36,3 @@ TARGET_SCREEN_DENSITY := 440
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
-# Vibrator
-TARGET_QTI_VIBRATOR_EFFECT_LIB := libqtivibratoreffect.xiaomi
-TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM := true
