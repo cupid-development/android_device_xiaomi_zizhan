@@ -687,12 +687,6 @@
                 <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
                 <graph_kv key="0xAC000000" value="0xAC000005"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_ULTRASOUND">
-                <!-- DEVICERX - SPEAKER -->
-                <graph_kv key="0xA2000000" value="0xA2000001"/>
-                <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
-                <graph_kv key="0xAC000000" value="0xAC000006"/>
-            </keys_and_values>
         </devicepp>
         <!-- OUT Handset DevicePPs -->
         <devicepp id="PAL_DEVICE_OUT_HANDSET">
@@ -713,12 +707,6 @@
                 <graph_kv key="0xA2000000" value="0xA2000004"/>
                 <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
                 <graph_kv key="0xAC000000" value="0xAC000005"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_ULTRASOUND">
-                <!-- DEVICERX - HANDSET -->
-                <graph_kv key="0xA2000000" value="0xA2000004"/>
-                <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
-                <graph_kv key="0xAC000000" value="0xAC000006"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic-rve">
                 <!-- DEVICERX - HANDSET -->
@@ -1159,13 +1147,6 @@
             <keys_and_values>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_ULTRASOUND_DETECTOR -->
                 <graph_kv key="0xAD000000" value="0xAD000011"/>
-            </keys_and_values>
-        </devicepp>
-       <!-- OUT Ultrasound DevicePPs -->
-        <devicepp id="PAL_DEVICE_OUT_ULTRASOUND">
-            <keys_and_values>
-                <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
-                <graph_kv key="0xAC000000" value="0xAC000006"/>
             </keys_and_values>
         </devicepp>
     </devicepps>
