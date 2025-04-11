@@ -335,6 +335,13 @@
                 <graph_kv key="0xB1000000" value="0xB100000E"/>
             </keys_and_values>
         </stream>
+        <!-- Ultrasound Proximity Detector stream -->
+        <stream type="PAL_STREAM_ULTRASOUND">
+            <keys_and_values Direction="RX">
+                <!-- STREAMRX - UPD_GENERATOR -->
+                <graph_kv key="0xA1000000" value="0xA1000016"/>
+            </keys_and_values>
+        </stream>
     </streams>
     <streampps>
         <!-- Voice Call stream PP -->
