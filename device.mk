@@ -37,6 +37,9 @@ PRODUCT_PACKAGES += \
     SystemUIResZizhan \
     WifiResZizhan
 
+# Sensors
+$(call soong_config_set,xiaomi_sm8450_sensor_notifier,extension_lib,//device/xiaomi/zizhan:libsensor-notifier-ext-fold)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

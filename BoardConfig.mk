@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Sensors
-TARGET_SENSOR_NOTIFIER_EXT := //device/xiaomi/zizhan:libsensor-notifier-ext-fold
-
 # Inherit from xiaomi sm8450-common
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
