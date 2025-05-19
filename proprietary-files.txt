@@ -1014,9 +1014,6 @@ vendor/etc/devicestate/device_state_configuration.xml
 vendor/etc/display/qdcm_calib_data_xiaomi_l18_38_0c_0a_prim_cmd_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_xiaomi_l18_38_0c_0a_sec_cmd_mode_dsc_dsi_panel.json
 
-# Display input mappings
-vendor/etc/input-port-associations.xml
-
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so

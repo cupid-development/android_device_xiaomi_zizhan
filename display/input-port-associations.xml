@@ -1,0 +1,4 @@
+<ports>
+    <port display="130" input="fts-pri/input0" />
+    <port display="131" input="fts-sec/input0" />
+</ports>
