@@ -19,7 +19,8 @@ PRODUCT_COPY_FILES += \
 # Display configurations
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/display/display_config_inner.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946220589295746.xml \
-    $(LOCAL_PATH)/display/display_config_outer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946220589295747.xml
+    $(LOCAL_PATH)/display/display_config_outer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946220589295747.xml \
+    $(LOCAL_PATH)/display/display_layout_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_layout_configuration.xml
 
 # Hinge angle sensor
 PRODUCT_COPY_FILES += \
